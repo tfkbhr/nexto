@@ -10,7 +10,7 @@ const meta = {
   offline: {
     title: 'Offline',
     description: 'You are offline',
-  }
+  },
 }
 
 export default meta

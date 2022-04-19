@@ -2,6 +2,9 @@
 const withPWA = require('next-pwa')
 
 const nextConfig = {
+  eslint: {
+    dirs: ['src'],
+  },
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
