@@ -7,7 +7,7 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "next lint --fix --max-warnings=0",
+    "lint": "tsc && next lint --fix --max-warnings=0",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "postinstall": "husky install"
