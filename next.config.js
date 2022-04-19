@@ -16,6 +16,13 @@ const nextConfig = {
     dest: 'public',
     disable: process.env.NODE_ENV === 'development',
   },
+  webpackDevMiddleware(config) {
+    config.watchOptions = {
+      poll: 1000,
+      aggregateTimeout: 300,
+    }
+    return config
+  },
 }
 
 module.exports = withPWA(nextConfig)
