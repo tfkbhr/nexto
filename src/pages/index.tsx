@@ -14,12 +14,7 @@ const Home: NextPage = () => {
       </main>
       <footer className="inline-flex h-16 w-full items-center justify-center text-sm text-slate-400">
         <Icon icon="tabler:brand-nextjs" className="mr-1" />
-        <a
-          href="https://nextjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mr-1 hover:text-white"
-        >
+        <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="mr-1 hover:text-white">
           Next.js
         </a>
         Boilerplate by
