@@ -1,12 +1,15 @@
-import { useEffect } from 'react'
+import '@/styles/globals.css'
+
+import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Script from 'next/script'
-import { GTM_ID, pageview } from '@/libs/gtm'
 import { DefaultSeo } from 'next-seo'
+import { useEffect } from 'react'
+
+import { GTM_ID, pageview } from '@/libs/gtm'
+
 import SEO from '../../next-seo.config'
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()

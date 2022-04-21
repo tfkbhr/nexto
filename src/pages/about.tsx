@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+
 import SEO from '@/components/SEO'
 import meta from '@/configs/meta'
 

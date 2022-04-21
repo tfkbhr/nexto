@@ -1,8 +1,8 @@
+import { Icon } from '@iconify/react'
 import type { NextPage } from 'next'
+
 import SEO from '@/components/SEO'
 import meta from '@/configs/meta'
-
-import { Icon } from '@iconify/react'
 
 const Home: NextPage = () => {
   return (
