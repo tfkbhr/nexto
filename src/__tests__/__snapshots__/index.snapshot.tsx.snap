@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="h-screen bg-slate-900"
+  >
+    <main
+      class="flex h-[calc(100vh-4rem)] items-center justify-center"
+    >
+      <span />
+      <h1
+        class="font-semibold uppercase tracking-widest text-slate-300"
+      >
+        Nexto
+      </h1>
+    </main>
+    <footer
+      class="inline-flex h-16 w-full items-center justify-center text-sm text-slate-400"
+    >
+      <span />
+      <a
+        class="mr-1 hover:text-white"
+        href="https://nextjs.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Next.js
+      </a>
+      Boilerplate by
+      <a
+        class="ml-1 hover:text-green-500"
+        href="https://github.com/tfkbhr/nexto"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        @tfkbhr
+      </a>
+      . Powered by 
+      <span />
+      <a
+        class="hover:text-white"
+        href="https://vitejs.dev/guide/features.html"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Vercel
+      </a>
+    </footer>
+  </div>
+</div>
+`;
