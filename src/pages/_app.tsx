@@ -8,15 +8,26 @@ import { DefaultSeo } from 'next-seo'
 import { useEffect } from 'react'
 
 import { GTM_ID, pageview } from '@/libs/gtm'
+import { startProgress, stopProgress } from '@/libs/nprogress'
 
 import SEO from '../../next-seo.config'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
+
   useEffect(() => {
     router.events.on('routeChangeComplete', pageview)
+
+    router.events.on('routeChangeStart', startProgress)
+    router.events.on('routeChangeComplete', stopProgress)
+    router.events.on('routeChangeError', stopProgress)
+
     return () => {
       router.events.off('routeChangeComplete', pageview)
+
+      router.events.off('routeChangeStart', startProgress)
+      router.events.off('routeChangeComplete', stopProgress)
+      router.events.off('routeChangeError', stopProgress)
     }
   }, [router.events])
 

@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  #nprogress {
+    @apply pointer-events-none;
+  }
+  #nprogress {
+    .bar {
+      @apply fixed top-0 left-0 z-[1000] h-[2px] w-full bg-indigo-500;
+    }
+  }
+  #nprogress {
+    .peg {
+      @apply absolute right-0 block h-full w-24 -translate-y-1 rotate-3 opacity-100 shadow;
+    }
+  }
+  #nprogress {
+    .spinner {
+      @apply fixed top-4 right-4 z-[1000] block;
+    }
+  }
+  #nprogress {
+    .spinner-icon {
+      @apply box-border h-5 w-5 animate-spin rounded-full border-2 border-transparent border-t-indigo-500 border-l-indigo-500 duration-500 ease-linear;
+    }
+  }
+  .nprogress-custom-parent {
+    @apply relative overflow-hidden;
+  }
+  .nprogress-custom-parent #nprogress .spinner,
+  .nprogress-custom-parent #nprogress .bar {
+    @apply absolute;
+  }
+}
