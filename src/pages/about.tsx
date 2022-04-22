@@ -1,15 +1,16 @@
+import { Icon } from '@iconify/react'
 import type { NextPage } from 'next'
 
-import SEO from '@/components/SEO'
+import Layout from '@/components/Layout'
 import meta from '@/configs/meta'
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
-    <div className="flex h-screen items-center justify-center bg-slate-900 font-semibold uppercase tracking-widest text-slate-300">
-      <SEO meta={meta.about} />
-      About
-    </div>
+    <Layout meta={meta.about}>
+      <Icon icon="akar-icons:info" className=" mr-4 text-6xl text-indigo-500" />
+      <h1 className="font-semibold uppercase tracking-widest text-slate-300">About</h1>
+    </Layout>
   )
 }
 
-export default Home
+export default About

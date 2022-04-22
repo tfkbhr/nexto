@@ -4,6 +4,7 @@ const meta = {
     description: 'Home Description',
   },
   about: {
+    path: '/about',
     title: 'About',
     description: 'About Description',
   },

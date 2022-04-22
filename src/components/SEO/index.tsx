@@ -1,21 +1,29 @@
+import getConfig from 'next/config'
 import { NextSeo } from 'next-seo'
 
+const { publicRuntimeConfig } = getConfig()
+
 interface SEO {
+  path?: string
   title: string
   description: string
 }
 
-interface SEOProps {
+export interface SEOProps {
   meta: SEO
 }
 
 const SEO = ({ meta }: SEOProps) => (
   <NextSeo
+    titleTemplate={`%s - ${publicRuntimeConfig.siteName}`}
     title={meta.title}
     description={meta.description}
-    canonical="http://canonical.co"
+    canonical={[publicRuntimeConfig.siteUrl, meta.path].join('')}
     openGraph={{
-      url: 'http://url.co',
+      type: 'website',
+      locale: 'en_IE',
+      site_name: publicRuntimeConfig.siteName,
+      url: [publicRuntimeConfig.siteUrl, meta.path].join(''),
       title: meta.title,
       description: meta.description,
       images: [{ url: 'https://www.example.ie/og-image.jpg' }],

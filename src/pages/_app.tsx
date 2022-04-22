@@ -4,13 +4,10 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Script from 'next/script'
-import { DefaultSeo } from 'next-seo'
 import { useEffect } from 'react'
 
 import { GTM_ID, pageview } from '@/libs/gtm'
 import { startProgress, stopProgress } from '@/libs/nprogress'
-
-import SEO from '../../next-seo.config'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -58,7 +55,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#317EFB" />
       </Head>
-      <DefaultSeo {...SEO} />
       <Component {...pageProps} />
     </>
   )

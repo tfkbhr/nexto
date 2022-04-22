@@ -11,9 +11,8 @@ const nextConfig = {
     outputStandalone: true,
   },
   publicRuntimeConfig: {
-    baseUrl: process.env.BASE_URL,
-    baseApiUrl: process.env.API_URL,
     siteName: process.env.SITE_NAME,
+    siteUrl: process.env.SITE_URL,
   },
   pwa: {
     dest: 'public',
