@@ -17,8 +17,12 @@ const Item = ({ path, name }: ItemProps) => {
           className={cx(
             'flex items-center justify-center',
             'h-10 pl-6 pr-5 group-first:rounded-l-full group-last:rounded-r-full',
-            'text-sm hover:text-slate-200',
-            [router.pathname === path ? 'bg-primary-500 text-white' : 'bg-slate-800 text-slate-400']
+            'text-sm',
+            [
+              router.pathname === path
+                ? 'bg-primary-500 text-white'
+                : 'bg-slate-800 text-slate-400 hover:text-slate-200',
+            ]
           )}
         >
           {name}
