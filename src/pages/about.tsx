@@ -7,7 +7,7 @@ import meta from '@/configs/meta'
 const About: NextPage = () => {
   return (
     <Layout meta={meta.about}>
-      <Icon icon="akar-icons:info" className=" mr-4 text-6xl text-indigo-500" />
+      <Icon icon="akar-icons:info" className=" mr-4 text-6xl text-primary-500" />
       <h1 className="font-semibold uppercase tracking-widest text-slate-300">About</h1>
     </Layout>
   )

@@ -8,7 +8,7 @@
   }
   #nprogress {
     .bar {
-      @apply fixed top-0 left-0 z-[1000] h-[2px] w-full bg-indigo-500;
+      @apply fixed top-0 left-0 z-[1000] h-[2px] w-full bg-primary-500;
     }
   }
   #nprogress {
@@ -23,7 +23,7 @@
   }
   #nprogress {
     .spinner-icon {
-      @apply box-border h-5 w-5 animate-spin rounded-full border-2 border-transparent border-t-indigo-500 border-l-indigo-500 duration-500 ease-linear;
+      @apply box-border h-5 w-5 animate-spin rounded-full border-2 border-transparent border-t-primary-500 border-l-primary-500 duration-500 ease-linear;
     }
   }
   .nprogress-custom-parent {
